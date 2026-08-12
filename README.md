@@ -15,7 +15,7 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 | Product | Platform | Version | Download |
 |---------|----------|---------|----------|
 | Chrome Extension | Chrome | v0.3.6 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.6/signlytic-extension.zip) |
-| Desktop App | Windows 11 | v0.2.0 beta | [Signlytic AI Setup 0.2.0.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.2.0/Signlytic.AI.Setup.0.2.0.exe) |
+| Desktop App | Windows 11 | v0.3.0 beta | [Signlytic AI Setup 0.3.0.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.0/Signlytic.AI.Setup.0.3.0.exe) |
 | Desktop App | macOS | upcoming | not yet available |
 
 Both are free and need no account. They are unsigned builds, so Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**.
@@ -49,7 +49,7 @@ See the [`Extension/`](./Extension) folder for source code and install instructi
 
 BSL signing for your whole computer, not just your browser. It reads Windows 11 Live Captions, which transcribes system audio, so it works with video calls, media players and any other desktop application.
 
-**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.2.0/Signlytic.AI.Setup.0.2.0.exe)** (v0.2.0 beta, 99 MB)
+**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.0/Signlytic.AI.Setup.0.3.0.exe)** (v0.3.0 beta, 99 MB)
 
 The Mac app is upcoming: macOS exposes captions through a different system interface, which needs a separate signed helper. See the [`Software App/`](./Software%20App) folder for details and current limitations.
 
