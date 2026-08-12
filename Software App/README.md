@@ -1,43 +1,60 @@
-# Signlytic Overlay — Windows Desktop App
+# Signlytic AI Desktop App
 
-**Status:** In Development
-**Platform:** Windows 10/11
+**Status:** Beta available for Windows. Mac app upcoming.
 **Built with:** Electron
 
----
+## Download
+
+| Platform | Version | Download |
+|----------|---------|----------|
+| Windows 11 | v0.2.0 beta | **[Signlytic AI Setup 0.2.0.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.2.0/Signlytic.AI.Setup.0.2.0.exe)** (99 MB) |
+| macOS | upcoming | not yet available |
+
+The installer is unsigned, so Windows SmartScreen will warn on first run.
+Choose **More info**, then **Run anyway**.
 
 ## Overview
 
-The Signlytic Overlay Windows app brings real-time BSL signing to your entire desktop — not just your browser.
+The desktop app brings BSL signing to your whole computer, not just your
+browser. The Chrome extension only sees web pages; this reads what Windows
+itself is hearing, so it works with video calls, media players and any other
+desktop application.
 
-Unlike the Chrome extension which only works on web pages, the Windows app overlays BSL signing on top of any application:
+It does that by reading **Windows 11 Live Captions**, which transcribes
+system audio. Whatever your computer is playing, Live Captions transcribes
+it and the app signs it.
 
-- **VLC** — sign alongside any video file
-- **Microsoft Teams** — sign live meeting captions
-- **Zoom** — sign Zoom closed captions
-- **Any app** — if it shows text, Signlytic can sign it
+## What works today
 
----
+- Windows 11 Live Captions read live and signed as they are spoken
+- 2D skeleton renderer (default) and 3D avatar renderer
+- Manual text entry, so the app is usable without captions
+- Sentences queue rather than cutting each other off mid-sign
+- Words with no sign in the dictionary are fingerspelled rather than skipped
 
-## Planned Features
+## Requirements
 
-- System tray icon — always accessible, never in the way
-- Windows Accessibility API integration — captures captions from any application
-- Full 5,203 sign dictionary loaded locally — no internet required after install
-- Same 2D skeleton and 3D avatar rendering as the Chrome extension
-- Auto-start on Windows boot (optional)
-- `.exe` installer — no developer tools required
+- Windows 11 22H2 or later, for Live Captions. The first time you open Live
+  Captions, Windows asks you to accept terms and download a speech model.
+  That is a one-off Windows step and cannot be done for you.
+- An internet connection. Gloss translation and sign data are fetched from
+  the Signlytic API.
 
----
+## Known limitations
 
-## Timeline
+- In 3D mode the hands currently sit lower than they should. 2D is the
+  default and is unaffected.
+- No system tray or auto-start yet.
+- Sign data is fetched rather than bundled, so the app needs a connection.
 
-Development begins after the Chrome extension reaches stable release.
-Follow progress on [LinkedIn](https://www.linkedin.com/in/iyanuoluwa-enoch-oke/) or leave feedback via the [Google Form](https://forms.gle/oTy7Bi414fuThFc1A).
+## macOS
 
----
+The app itself runs on macOS through manual text entry. What is missing is
+caption capture: macOS exposes captions through the Accessibility API rather
+than the UI Automation interface used on Windows, which needs a separate
+signed helper and explicit permission from the user. Everything after the
+text arrives is already shared between both platforms.
 
-## Notify Me
+## Feedback
 
-Want to know when the Windows app launches?
-**[Leave your feedback here](https://forms.gle/oTy7Bi414fuThFc1A)**
+[Leave feedback here](https://forms.gle/oTy7Bi414fuThFc1A)
