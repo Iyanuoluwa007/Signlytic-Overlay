@@ -7,7 +7,7 @@
 
 | Platform | Version | Download |
 |----------|---------|----------|
-| Windows 11 | v0.3.3 beta | **[Signlytic AI Setup 0.3.3.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.3/Signlytic.AI.Setup.0.3.3.exe)** (99 MB) |
+| Windows 11 | v0.3.4 beta | **[Signlytic AI Setup 0.3.4.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.4/Signlytic.AI.Setup.0.3.4.exe)** (99 MB) |
 | macOS | upcoming | not yet available |
 
 The installer is unsigned, so Windows SmartScreen will warn on first run.
