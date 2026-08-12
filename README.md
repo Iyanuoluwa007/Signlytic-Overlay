@@ -14,8 +14,8 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 
 | Product | Platform | Version | Download |
 |---------|----------|---------|----------|
-| Chrome Extension | Chrome | v0.3.6 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.6/signlytic-extension.zip) |
-| Desktop App | Windows 11 | v0.3.1 beta | [Signlytic AI Setup 0.3.1.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.1/Signlytic.AI.Setup.0.3.1.exe) |
+| Chrome Extension | Chrome | v0.3.7 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.7/signlytic-extension.zip) |
+| Desktop App | Windows 11 | v0.3.3 beta | [Signlytic AI Setup 0.3.3.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.3/Signlytic.AI.Setup.0.3.3.exe) |
 | Desktop App | macOS | upcoming | not yet available |
 
 Both are free and need no account. They are unsigned builds, so Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**.
@@ -39,7 +39,7 @@ Both are free and need no account. They are unsigned builds, so Windows SmartScr
 
 Real-time BSL signing overlay for Chrome. Works on any website with captions.
 
-**[Download Beta v0.3.6](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.6/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
+**[Download Beta v0.3.7](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.7/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
 
 See the [`Extension/`](./Extension) folder for source code and install instructions.
 
@@ -49,7 +49,7 @@ See the [`Extension/`](./Extension) folder for source code and install instructi
 
 BSL signing for your whole computer, not just your browser. It reads Windows 11 Live Captions, which transcribes system audio, so it works with video calls, media players and any other desktop application.
 
-**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.1/Signlytic.AI.Setup.0.3.1.exe)** (v0.3.1 beta, 99 MB)
+**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.3/Signlytic.AI.Setup.0.3.3.exe)** (v0.3.3 beta, 99 MB)
 
 The Mac app is upcoming: macOS exposes captions through a different system interface, which needs a separate signed helper. See the [`Software App/`](./Software%20App) folder for details and current limitations.
 
@@ -118,3 +118,28 @@ right to redistribute them.
 Nothing here is intended to distribute third-party assets. If you believe
 something has been included that should not have been, please open an issue
 and it will be taken down.
+## Licence and attribution
+
+Signlytic AI is released under the MIT Licence. See [LICENSE](LICENSE) for the
+full text.
+
+Copyright (c) 2025 Oke Iyanuoluwa Enoch.
+
+You are free to use, modify and build on this work, commercially or otherwise.
+The licence asks one thing in return, and it is not optional: **keep the
+copyright notice and the licence text with any copy or substantial portion of
+the software.** That notice is how the work stays credited to its author.
+
+If you fork this project, publish something derived from it, or use it in a
+product, paper or demo, please also credit it visibly and link back here:
+
+> Built on [Signlytic AI](https://github.com/Iyanuoluwa007/Signlytic-Overlay)
+> by Oke Iyanuoluwa Enoch.
+
+Academic or written work can cite it as:
+
+> Oke, I. E. (2025). *Signlytic AI: real-time English to British Sign Language
+> translation*. https://github.com/Iyanuoluwa007/Signlytic-Overlay
+
+The MIT Licence covers this project's own code. It does not extend to the
+third-party assets described above, which stay under their owners' terms.
