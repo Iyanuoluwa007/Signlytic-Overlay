@@ -14,7 +14,7 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 
 | Product | Platform | Version | Download |
 |---------|----------|---------|----------|
-| Chrome Extension | Chrome | v0.3.7 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.7/signlytic-extension.zip) |
+| Chrome Extension | Chrome | v0.3.8 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.8/signlytic-extension.zip) |
 | Desktop App | Windows 11 | v0.3.6 beta | [Signlytic AI Setup 0.3.6.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.6/Signlytic.AI.Setup.0.3.6.exe) |
 | Desktop App | macOS | upcoming | not yet available |
 
@@ -39,7 +39,7 @@ Both are free and need no account. They are unsigned builds, so Windows SmartScr
 
 Real-time BSL signing overlay for Chrome. Works on any website with captions.
 
-**[Download Beta v0.3.7](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.7/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
+**[Download Beta v0.3.8](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.8/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
 
 See the [`Extension/`](./Extension) folder for source code and install instructions.
 
