@@ -1,5 +1,7 @@
 # Signlytic Overlay
 
+[![Sponsor](https://img.shields.io/github/sponsors/Iyanuoluwa007?label=Sponsor&logo=GitHub&color=ea4aaa)](https://github.com/sponsors/Iyanuoluwa007)
+
 **Real-time British Sign Language signing for Chrome and Windows.**
 
 Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and more - and translates them into animated BSL signing in a floating panel. Type or speak in English and watch the signs play back in real time.
@@ -118,6 +120,21 @@ right to redistribute them.
 Nothing here is intended to distribute third-party assets. If you believe
 something has been included that should not have been, please open an issue
 and it will be taken down.
+## Support this project
+
+Signlytic AI is built and maintained by one person, in the open, and given away
+free. If the extension or the app is useful to you, you can sponsor the work:
+
+**[github.com/sponsors/Iyanuoluwa007](https://github.com/sponsors/Iyanuoluwa007)**
+
+Sponsorship covers the running costs, the demo hosting, the language model usage
+behind live translation and the sign data storage, and buys time for the parts
+still missing: continuous recognition, wider vocabulary, and testing with BSL
+users.
+
+If sponsoring is not for you, reporting a sign that renders badly, or telling me
+where the overlay fails on a site you use, is worth just as much.
+
 ## Licence and attribution
 
 Signlytic AI is released under the MIT Licence. See [LICENSE](LICENSE) for the

@@ -1,0 +1,20 @@
+# Adds the "Sponsor" button to the top of the repository page.
+#
+# github: only renders once a GitHub Sponsors profile has been created and
+# approved at https://github.com/sponsors. Until then GitHub ignores this line,
+# so it is safe to leave here: the button appears by itself on approval, with
+# no further change needed.
+github: [Iyanuoluwa007]
+
+# Platforms that work immediately, without GitHub's approval process. Each is
+# left commented out deliberately: an entry pointing at an account that does
+# not exist produces a Sponsor button leading to a 404, which is worse than no
+# button. Uncomment a line only once the account exists, and put your real
+# username in place of the placeholder.
+#
+# ko_fi: your-ko-fi-name
+# buy_me_a_coffee: your-bmac-name
+# liberapay: your-liberapay-name
+# open_collective: your-collective-name
+# patreon: your-patreon-name
+# custom: ["https://www.paypal.me/your-paypal-name"]
