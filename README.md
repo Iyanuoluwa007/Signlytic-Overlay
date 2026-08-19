@@ -16,8 +16,8 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 
 | Product | Platform | Version | Download |
 |---------|----------|---------|----------|
-| Chrome Extension | Chrome | v0.4.0 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.0/signlytic-extension.zip) |
-| Desktop App | Windows 11 | v0.3.7 beta | [Signlytic AI Setup 0.3.7.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI.Setup.0.3.7.exe) |
+| Chrome Extension | Chrome | v0.4.1 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.1/signlytic-extension.zip) |
+| Desktop App | Windows 11 | v0.3.8 beta | [Signlytic AI Setup 0.3.8.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.8/Signlytic.AI.Setup.0.3.8.exe) |
 | Desktop App | macOS 13+ | v0.3.7 beta | [Signlytic AI-0.3.7-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg) |
 
 All are free and need no account. None of the builds are code-signed, so each needs talking past the operating system once. Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**. macOS is stricter and will refuse to open the app normally: **right-click it and choose Open**, then confirm.
@@ -43,7 +43,7 @@ The Mac desktop build is universal, so one file covers Apple silicon and Intel. 
 
 Real-time BSL signing overlay for Chrome. Works on any website with captions.
 
-**[Download Beta v0.4.0](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.0/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
+**[Download Beta v0.4.1](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.1/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
 
 See the [`Extension/`](./Extension) folder for source code and install instructions.
 
@@ -53,9 +53,11 @@ See the [`Extension/`](./Extension) folder for source code and install instructi
 
 BSL signing for your whole computer, not just your browser. It works with video calls, media players and any other desktop application.
 
-**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI.Setup.0.3.7.exe)** (v0.3.7 beta, 99 MB)
+**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.8/Signlytic.AI.Setup.0.3.8.exe)** (v0.3.8 beta, 99 MB)
 &nbsp;|&nbsp;
 **[Download for macOS](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg)** (v0.3.7 beta, 208 MB universal)
+
+The two platforms are not on the same version. Windows 0.3.8 fixed the 3D avatar's hand placement, and the female avatar, which had never animated at all. macOS is still 0.3.7 and has neither, because a Mac build has to be produced on a Mac. The 2D renderer is unaffected on both.
 
 The two platforms reach the same place by different routes. Windows reads the Live Captions window, which transcribes system audio, so it needs Windows 11 22H2 or newer. macOS has no equivalent window to read, so the app recognises speech itself, from the microphone or from system audio, and feeds the same sentence assembler. Everything after the text arrives is shared.
 

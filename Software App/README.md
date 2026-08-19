@@ -1,13 +1,13 @@
 # Signlytic AI Desktop App
 
-**Status:** Beta available for Windows and macOS.
+**Status:** Beta. Windows on 0.3.8, macOS still on 0.3.7.
 **Built with:** Electron
 
 ## Download
 
 | Platform | Version | Download |
 |----------|---------|----------|
-| Windows 11 | v0.3.7 beta | **[Signlytic AI Setup 0.3.7.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI.Setup.0.3.7.exe)** (99 MB) |
+| Windows 11 | v0.3.8 beta | **[Signlytic AI Setup 0.3.8.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.8/Signlytic.AI.Setup.0.3.8.exe)** (99 MB) |
 | macOS 13 or later | v0.3.7 beta | **[Signlytic AI-0.3.7-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg)** (208 MB, universal) |
 
 Neither build is code-signed, so each needs talking past the operating system
