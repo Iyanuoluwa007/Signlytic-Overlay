@@ -73,7 +73,7 @@ See the [`Software App/`](./Software%20App) folder for details and current limit
 | 3D Signing | Three.js r128, Mixamo GLB avatars |
 | Extension | Chrome MV3, iframe overlay architecture |
 | Desktop App | Electron, PowerShell UI Automation on Windows, Swift speech recognition on macOS |
-| Backend Integration | FastAPI (local), Groq Llama 3.3 70B |
+| Backend Integration | FastAPI (local), Cerebras gpt-oss-120b with Groq gpt-oss-120b as fallback |
 
 ---
 
