@@ -2,7 +2,7 @@
 
 [![Sponsor](https://img.shields.io/github/sponsors/Iyanuoluwa007?label=Sponsor&logo=GitHub&color=ea4aaa)](https://github.com/sponsors/Iyanuoluwa007)
 
-**Real-time British Sign Language signing for Chrome and Windows.**
+**Real-time British Sign Language signing for Chrome, Windows and macOS.**
 
 Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and more - and translates them into animated BSL signing in a floating panel. Type or speak in English and watch the signs play back in real time.
 
@@ -18,9 +18,11 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 |---------|----------|---------|----------|
 | Chrome Extension | Chrome | v0.3.9 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.3.9/signlytic-extension.zip) |
 | Desktop App | Windows 11 | v0.3.7 beta | [Signlytic AI Setup 0.3.7.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI.Setup.0.3.7.exe) |
-| Desktop App | macOS | upcoming | not yet available |
+| Desktop App | macOS 13+ | v0.3.7 beta | [Signlytic AI-0.3.7-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg) |
 
-Both are free and need no account. They are unsigned builds, so Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**.
+All are free and need no account. None of the builds are code-signed, so each needs talking past the operating system once. Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**. macOS is stricter and will refuse to open the app normally: **right-click it and choose Open**, then confirm.
+
+The Mac desktop build is universal, so one file covers Apple silicon and Intel. It is on its first release and is less tested than the Windows one, which has been through several.
 
 ---
 
@@ -47,13 +49,17 @@ See the [`Extension/`](./Extension) folder for source code and install instructi
 
 ---
 
-### Software App - Desktop App (Windows beta, Mac upcoming)
+### Software App - Desktop App (Windows and macOS beta)
 
-BSL signing for your whole computer, not just your browser. It reads Windows 11 Live Captions, which transcribes system audio, so it works with video calls, media players and any other desktop application.
+BSL signing for your whole computer, not just your browser. It works with video calls, media players and any other desktop application.
 
 **[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI.Setup.0.3.7.exe)** (v0.3.7 beta, 99 MB)
+&nbsp;|&nbsp;
+**[Download for macOS](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg)** (v0.3.7 beta, 208 MB universal)
 
-The Mac app is upcoming: macOS exposes captions through a different system interface, which needs a separate signed helper. See the [`Software App/`](./Software%20App) folder for details and current limitations.
+The two platforms reach the same place by different routes. Windows reads the Live Captions window, which transcribes system audio, so it needs Windows 11 22H2 or newer. macOS has no equivalent window to read, so the app recognises speech itself, from the microphone or from system audio, and feeds the same sentence assembler. Everything after the text arrives is shared.
+
+See the [`Software App/`](./Software%20App) folder for details and current limitations.
 
 ---
 
@@ -66,7 +72,7 @@ The Mac app is upcoming: macOS exposes captions through a different system inter
 | 2D Signing | MediaPipe Holistic pose landmarks + Canvas |
 | 3D Signing | Three.js r128, Mixamo GLB avatars |
 | Extension | Chrome MV3, iframe overlay architecture |
-| Desktop App | Electron (planned) |
+| Desktop App | Electron, PowerShell UI Automation on Windows, Swift speech recognition on macOS |
 | Backend Integration | FastAPI (local), Groq Llama 3.3 70B |
 
 ---
