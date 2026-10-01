@@ -1,6 +1,6 @@
 # Signlytic Overlay - Chrome Extension
 
-**Version:** 0.4.1 (Beta)
+**Version:** 0.4.2 (Beta)
 **Browser:** Chrome (Chromium-based browsers)
 **Install:** Manual (Load Unpacked)
 
@@ -8,7 +8,7 @@
 
 ## Download
 
-**[Download Beta v0.4.1](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.1/signlytic-extension.zip)**
+**[Download Beta v0.4.2](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.2/signlytic-extension.zip)**
 or visit the [extension page](https://signlytic-ai-website.vercel.app/extension)
 for install instructions.
 
