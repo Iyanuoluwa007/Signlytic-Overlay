@@ -16,11 +16,11 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 
 | Product | Platform | Version | Download |
 |---------|----------|---------|----------|
-| Chrome Extension | Chrome | v0.4.2 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.2/signlytic-extension.zip) |
-| Desktop App | Windows 11 | v0.3.9 beta | [Signlytic AI Setup 0.3.9.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI.Setup.0.3.9.exe) |
-| Desktop App | macOS 13+ | v0.3.7 beta | [Signlytic AI-0.3.7-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg) |
+| Chrome Extension | Chrome | v0.4.3 beta | [signlytic-extension.zip](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.3/signlytic-extension.zip) |
+| Desktop App | Windows 11 | v0.3.10 beta | [Signlytic AI Setup 0.3.10.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.10/Signlytic.AI.Setup.0.3.10.exe) |
+| Desktop App | macOS 13+ | v0.3.9 beta | [Signlytic AI-0.3.9-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI-0.3.9-universal.dmg) |
 
-All are free and need no account. None of the builds are code-signed, so each needs talking past the operating system once. Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**. macOS is stricter and will refuse to open the app normally: **right-click it and choose Open**, then confirm.
+All are free and need no account. None of the builds are code-signed, so each needs talking past the operating system once. Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**. macOS is stricter: the first time, macOS will refuse to open it. Choose **Done**, then open **System Settings**, **Privacy and Security**, scroll down to **Security**, choose **Open Anyway** next to the message about Signlytic AI, and authenticate. On macOS 13 or 14 you can instead right-click the app and choose Open; on macOS 15 and later that no longer works.
 
 The Mac desktop build is universal, so one file covers Apple silicon and Intel. It is on its first release and is less tested than the Windows one, which has been through several.
 
@@ -43,7 +43,7 @@ The Mac desktop build is universal, so one file covers Apple silicon and Intel. 
 
 Real-time BSL signing overlay for Chrome. Works on any website with captions.
 
-**[Download Beta v0.4.2](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.2/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
+**[Download Beta v0.4.3](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/v0.4.3/signlytic-extension.zip)** or see the [install page](https://signlytic-ai-website.vercel.app/extension).
 
 See the [`Extension/`](./Extension) folder for source code and install instructions.
 
@@ -53,11 +53,11 @@ See the [`Extension/`](./Extension) folder for source code and install instructi
 
 BSL signing for your whole computer, not just your browser. It works with video calls, media players and any other desktop application.
 
-**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI.Setup.0.3.9.exe)** (v0.3.9 beta, 99 MB)
+**[Download for Windows](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.10/Signlytic.AI.Setup.0.3.10.exe)** (v0.3.10 beta, 99 MB)
 &nbsp;|&nbsp;
-**[Download for macOS](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg)** (v0.3.7 beta, 208 MB universal)
+**[Download for macOS](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI-0.3.9-universal.dmg)** (v0.3.9 beta, 208 MB universal)
 
-The two platforms are not on the same version. Windows 0.3.9 carries the 3D avatar fixes: where the hands are placed, the female avatar, which had never animated at all, and the hands and fingers themselves. macOS is still 0.3.7 and has none of them, because a Mac build has to be produced on a Mac. The 2D renderer is unaffected on both.
+The two platforms are not on the same version. Windows 0.3.10 makes the 3D avatar's fingers move naturally: no tremor, no claws, relaxed hands at rest, and no hands sinking into the body. macOS is on 0.3.9, which carries every earlier 3D avatar fix (where the hands are placed, the female avatar, and the hands and fingers themselves) but not that one, because a Mac build has to be produced on a Mac. The 2D renderer is unaffected on both.
 
 The two platforms reach the same place by different routes. Windows reads the Live Captions window, which transcribes system audio, so it needs Windows 11 22H2 or newer. macOS has no equivalent window to read, so the app recognises speech itself, from the microphone or from system audio, and feeds the same sentence assembler. Everything after the text arrives is shared.
 

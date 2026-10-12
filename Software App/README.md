@@ -1,19 +1,23 @@
 # Signlytic AI Desktop App
 
-**Status:** Beta. Windows on 0.3.9, macOS still on 0.3.7.
+**Status:** Beta. Windows on 0.3.10, macOS on 0.3.9.
 **Built with:** Electron
 
 ## Download
 
 | Platform | Version | Download |
 |----------|---------|----------|
-| Windows 11 | v0.3.9 beta | **[Signlytic AI Setup 0.3.9.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI.Setup.0.3.9.exe)** (99 MB) |
-| macOS 13 or later | v0.3.7 beta | **[Signlytic AI-0.3.7-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.7/Signlytic.AI-0.3.7-universal.dmg)** (208 MB, universal) |
+| Windows 11 | v0.3.10 beta | **[Signlytic AI Setup 0.3.10.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.10/Signlytic.AI.Setup.0.3.10.exe)** (99 MB) |
+| macOS 13 or later | v0.3.9 beta | **[Signlytic AI-0.3.9-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI-0.3.9-universal.dmg)** (208 MB, universal) |
 
 Neither build is code-signed, so each needs talking past the operating system
 once. Windows SmartScreen warns on first run: choose **More info**, then
-**Run anyway**. macOS is stricter and will refuse to open the app normally:
-drag it to Applications, then **right-click it and choose Open**, and confirm.
+**Run anyway**. macOS is stricter. Drag the app to Applications; the first
+time, macOS will refuse to open it. Choose **Done**, then open **System
+Settings**, **Privacy and Security**, scroll down to **Security**, choose **Open
+Anyway** next to the message about Signlytic AI, and authenticate. On macOS 13
+or 14 you can instead right-click the app and choose Open; on macOS 15 and later
+that no longer works.
 
 The Mac build is universal, so one file covers Apple silicon and Intel.
 
