@@ -1,6 +1,6 @@
 # Signlytic AI Desktop App
 
-**Status:** Beta. Windows on 0.3.11, macOS on 0.3.9.
+**Status:** Beta. Windows and macOS both on 0.3.11.
 **Built with:** Electron
 
 ## Download
@@ -8,7 +8,7 @@
 | Platform | Version | Download |
 |----------|---------|----------|
 | Windows 11 | v0.3.11 beta | **[Signlytic AI Setup 0.3.11.exe](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.11/Signlytic.AI.Setup.0.3.11.exe)** (99 MB) |
-| macOS 13 or later | v0.3.9 beta | **[Signlytic AI-0.3.9-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.9/Signlytic.AI-0.3.9-universal.dmg)** (208 MB, universal) |
+| macOS 13 or later | v0.3.11 beta | **[Signlytic AI-0.3.11-universal.dmg](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases/download/desktop-v0.3.11/Signlytic.AI-0.3.11-universal.dmg)** (208 MB, universal) |
 
 Neither build is code-signed, so each needs talking past the operating system
 once. Windows SmartScreen warns on first run: choose **More info**, then
