@@ -1,0 +1,58 @@
+# Blocks a pull request until its author confirms, in the pull request
+# template, that a person read and ran every change, and has disclosed and
+# checked any AI-generated work. It is a required check on main, so nothing can
+# merge until it passes, and the maintainer's approving review is required on
+# top of it.
+#
+# It only reads the pull request description from the event. It checks out no
+# code and has no token permissions, so it is safe to run on pull requests from
+# forks. The description is passed through an environment variable, never
+# pasted into the script, so its text cannot run as shell commands.
+name: Human verification
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+
+permissions: {}
+
+jobs:
+  human-verification:
+    name: Human verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the human verification checklist
+        env:
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          fail=0
+          ticked() { printf '%s\n' "$BODY" | grep -Eiq -- "^[[:space:]]*-[[:space:]]*\[x\][[:space:]]*$1"; }
+          need() {
+            if ticked "$1"; then echo "ok: $2"; else echo "::error::Tick this box in the pull request description: $2"; fail=1; fi
+          }
+
+          need "I personally read every changed line" "I personally read every changed line, ran it, and can explain it."
+          need "Every item in the issue's" "Every item in the issue's Done when list is true."
+          need "This pull request adds no sign pose data" "No sign pose data, dataset media, avatar models, API keys or tokens."
+
+          no_ai=0; used_ai=0
+          ticked "No AI tools were used" && no_ai=1
+          ticked "AI tools were used for this change" && used_ai=1
+          if [ $((no_ai + used_ai)) -ne 1 ]; then
+            echo "::error::Under AI assistance, tick exactly one box: no AI tools, or AI tools were used."
+            fail=1
+          elif [ "$used_ai" -eq 1 ]; then
+            need "I checked everything the AI produced myself" "I checked everything the AI produced myself."
+            details=$(printf '%s\n' "$BODY" | sed -n 's/^AI tools and what they did:[[:space:]]*//p' | head -1)
+            rest=$(printf '%s\n' "$BODY" | sed -n '/^AI tools and what they did:/,$p' | tail -n +2 | grep -v '^[[:space:]]*$' | grep -v '^<!--' | head -1)
+            if [ -z "$details$rest" ]; then
+              echo "::error::Say which AI tool you used and what it did, after 'AI tools and what they did:'."
+              fail=1
+            fi
+          fi
+
+          if [ "$fail" -ne 0 ]; then
+            echo "The human verification checklist is incomplete. Edit the pull request description and this check runs again."
+            exit 1
+          fi
+          echo "Human verification checklist complete. The maintainer still has to review and approve before merging."
