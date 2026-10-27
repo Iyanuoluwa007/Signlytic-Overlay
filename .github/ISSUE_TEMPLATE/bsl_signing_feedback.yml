@@ -1,0 +1,72 @@
+name: BSL signing feedback
+description: A sign looks wrong, unclear or unnatural. Feedback from BSL users is the most valuable thing this project can get.
+labels: ["needs BSL reviewer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time. You do not need to answer every question: tell us what you can.
+        Signlytic signs word by word and has no facial expressions yet, so some feedback will be about things we already know are missing. It is still worth telling us.
+  - type: input
+    id: sentence
+    attributes:
+      label: The English you entered
+      placeholder: "for example Do you take the bus to work?"
+    validations:
+      required: true
+  - type: input
+    id: glosses
+    attributes:
+      label: The signs shown
+      description: The sign names shown under the signing, if you can see them.
+      placeholder: "for example YOU TAKE BUS WORK"
+  - type: dropdown
+    id: renderer
+    attributes:
+      label: Which signing view?
+      options:
+        - 3D avatar
+        - 2D skeleton
+        - Both
+  - type: dropdown
+    id: issue
+    attributes:
+      label: What is wrong?
+      multiple: true
+      options:
+        - Wrong sign for the word
+        - Handshape
+        - Where the sign is made (location)
+        - Movement
+        - Palm or hand orientation
+        - Sign order (BSL grammar)
+        - Fingerspelling
+        - Too fast or too slow
+        - Joins between signs look wrong
+        - Hard to see or read
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What did you see, and what would a fluent signer expect?
+      description: A link to a dictionary video of the correct sign (for example on SignBSL) is very helpful. Please do not upload recordings of other people without their permission.
+    validations:
+      required: true
+  - type: dropdown
+    id: signer
+    attributes:
+      label: Your BSL background (optional)
+      description: This helps us weigh the feedback. You can skip it.
+      options:
+        - Deaf BSL user
+        - Hearing, fluent in BSL
+        - Interpreter
+        - Learning BSL
+        - Prefer not to say
+  - type: input
+    id: region
+    attributes:
+      label: Regional variant (optional)
+      description: BSL varies by region. If the sign you expect is a regional one, where is it used?

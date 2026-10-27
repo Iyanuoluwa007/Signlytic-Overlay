@@ -1,0 +1,63 @@
+name: Bug report
+description: Something does not work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please do not include API keys, tokens or personal information.
+        **Security problems:** please do not open an issue. Email the maintainer instead (the address is in the [Code of Conduct](https://github.com/Iyanuoluwa007/Signlytic_AI/blob/main/CODE_OF_CONDUCT.md#enforcement)).
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part of Signlytic?
+      options:
+        - Website or online demo
+        - Chrome extension
+        - Desktop app on Windows
+        - Desktop app on macOS
+        - Local Python system (dashboard or server)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The app or extension version, or the commit if you run from source.
+      placeholder: "for example desktop 0.3.11, extension v0.4.4, or a commit hash"
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and browser
+      placeholder: "for example Windows 11, Chrome 141"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include any error message, copied as text.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Open ...
+        2. Type ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: If the problem is with how something is signed, the "BSL signing feedback" form asks the right questions.

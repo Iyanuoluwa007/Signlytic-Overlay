@@ -6,6 +6,8 @@
 
 Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and more - and translates them into animated BSL signing in a floating panel. Type or speak in English and watch the signs play back in real time.
 
+Part of **[Signlytic AI](https://github.com/Iyanuoluwa007/Signlytic_AI)**. This repository holds the released apps; the source code, issues and [contributing guide](https://github.com/Iyanuoluwa007/Signlytic_AI/blob/main/CONTRIBUTING.md) are in Signlytic_AI.
+
 [![Website](https://img.shields.io/badge/Website-signlytic--ai--website.vercel.app-0e7c6b?style=flat-square)](https://signlytic-ai-website.vercel.app)
 [![Extension](https://img.shields.io/badge/Chrome_Extension-Beta-5eead4?style=flat-square)](https://signlytic-ai-website.vercel.app/extension)
 [![Feedback](https://img.shields.io/badge/Feedback-Google_Form-white?style=flat-square)](https://forms.gle/oTy7Bi414fuThFc1A)
@@ -23,6 +25,30 @@ Signlytic Overlay detects live captions from YouTube, BBC iPlayer, Netflix and m
 All are free and need no account. None of the builds are code-signed, so each needs talking past the operating system once. Windows SmartScreen warns on first run: choose **More info**, then **Run anyway**. macOS is stricter: the first time, macOS will refuse to open it. Choose **Done**, then open **System Settings**, **Privacy and Security**, scroll down to **Security**, choose **Open Anyway** next to the message about Signlytic AI, and authenticate. On macOS 13 or 14 you can instead right-click the app and choose Open; on macOS 15 and later that no longer works.
 
 The Mac desktop build is universal, so one file covers Apple silicon and Intel. It is on its first release and is less tested than the Windows one, which has been through several.
+
+### Check your download
+
+Every release lists a `SHA256SUMS.txt` file, and GitHub shows the SHA-256 of each file on the [releases page](https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases). Work out the checksum of the file you downloaded and compare it with the one listed. If they differ, do not open the file: download it again, and open an issue if it still differs.
+
+On Windows, in PowerShell, in the folder you downloaded to:
+
+```powershell
+Get-FileHash Signlytic*.exe -Algorithm SHA256
+```
+
+On macOS, in Terminal, in the folder you downloaded to:
+
+```bash
+shasum -a 256 Signlytic*.dmg
+```
+
+On Linux, or anywhere with `sha256sum`, put `SHA256SUMS.txt` in the same folder as your download and run:
+
+```bash
+sha256sum --check --ignore-missing SHA256SUMS.txt
+```
+
+A matching checksum shows the file is exactly the one published here and was not changed or damaged on the way. It does not show who built it: the builds are not code-signed yet, and reproducible builds are tracked in [#5](https://github.com/Iyanuoluwa007/Signlytic-Overlay/issues/5).
 
 ---
 
@@ -86,6 +112,7 @@ This project is part of the broader **Signlytic AI** system - a bidirectional BS
 - **Website:** https://signlytic-ai-website.vercel.app
 - **Live Demo:** https://signlytic-ai-website.vercel.app/demo
 - **Feedback:** https://forms.gle/oTy7Bi414fuThFc1A
+- **Source code and contributing:** https://github.com/Iyanuoluwa007/Signlytic_AI
 
 ---
 

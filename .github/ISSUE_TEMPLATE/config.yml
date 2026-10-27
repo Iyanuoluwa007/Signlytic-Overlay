@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/Iyanuoluwa007/Signlytic_AI/discussions
+    about: Ask how something works, share an idea or show what you built. Issues are for bugs and planned work.
+  - name: Feedback form (no GitHub account needed)
+    url: https://forms.gle/oTy7Bi414fuThFc1A
+    about: For BSL users, accessibility specialists and anyone who would rather not use GitHub.
+  - name: Download the apps
+    url: https://github.com/Iyanuoluwa007/Signlytic-Overlay/releases
+    about: The desktop app and Chrome extension releases, with install instructions.

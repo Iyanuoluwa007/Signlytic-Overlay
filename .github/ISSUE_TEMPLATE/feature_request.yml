@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest something new, or a change to how something works.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Who runs into it, and when? Start from the problem rather than the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part of Signlytic?
+      multiple: true
+      options:
+        - Website or online demo
+        - Chrome extension
+        - Desktop app
+        - Local Python system
+        - Signing (2D skeleton or 3D avatar)
+        - Not sure
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Anything else you considered?
+  - type: checkboxes
+    id: bsl
+    attributes:
+      label: BSL
+      options:
+        - label: This changes how BSL is signed, so it will need review by a fluent BSL user.
