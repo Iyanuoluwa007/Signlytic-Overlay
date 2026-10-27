@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thanks for reporting this. Please do not include API keys, tokens or personal information.
-        **Security problems:** please do not open an issue. Email the maintainer instead (the address is in the [Code of Conduct](https://github.com/Iyanuoluwa007/Signlytic_AI/blob/main/CODE_OF_CONDUCT.md#enforcement)).
+        **Security problems:** please do not open a public issue. [Report a vulnerability privately](https://github.com/Iyanuoluwa007/Signlytic_AI/security/advisories/new) instead, so only the maintainer sees it until it is fixed.
   - type: dropdown
     id: part
     attributes:
